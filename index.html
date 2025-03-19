@@ -5,38 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="https://www.youtube.com/s/desktop/eb0437e6/img/logos/favicon_144x144.png" sizes="144x144">
- 
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
     <title>Youtube</title>
 </head>
 <body>
-    
+
+
+
+
+
+
+
+
+
     <div class="navbar">
         <div class="logo">
-            <i class="material-icons">view_headline</i>
+            <i id ="top" class="material-icons">view_headline</i>
             <img src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg" alt="">
-            <span id="country-code" class="country-code">
-                ZA
-              </span>
+            <span id="country-code" class="country-code">ZA</span>
+          
         </div>
-        
-         
         <div class="searchbar">
             <form class="search">
                 <input type="text" placeholder="Search">
                 <button><i class="material-icons">search</i></button>
             </form>
-           <i class="material-icons">keyboard_voice</i>
+            <i class="material-icons">keyboard_voice</i>
         </div>
-        <div class="navigation-icons">
-            <i class="material-icons">video_call</i>
-            <i class="material-icons">apps</i>
-            <I class="material-icons">notifications</I>
-            <i class="material-icons">account_circle</i>
+
+
+        <div class="toggle-switch">
+          <input type="checkbox" id="dark-mode-switch" onchange="toggleDarkMode()">
+          <label for="dark-mode-switch" class="switch-label">
+              <span class="switch-button"></span>
+          </label>
+      </div>
+      
+
+      <button class="create-button">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"></path>
+        </svg>
+        <span>Create</span>
+      </button>
+      
+            <i class="material-icons">notifications</i>
+            <img src="/Assets/Thumbnails/19.jpeg" alt="Zaio" class="profile-image"/>
         </div>
     </div>
-   
     <div class="mainbody">
         <div class="categories">
             <div class="category-section">
@@ -45,8 +61,16 @@
                     Home
                 </span>
                 <span class="category">
-                    <i class="material-icons">shorts</i>
-                    Shorts
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+                    <g fill="#606060" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                      <g transform="scale(10.66667,10.66667)">
+                        <path d="M15.88672,1c-0.91259,0 -1.80903,0.22864 -2.59961,0.65625l-7.7207,4.06445v-0.00195c-1.80265,0.94645 -2.92969,2.81353 -2.92969,4.84766c0,1.3451 0.58584,2.51599 1.41016,3.48047c-0.83077,0.97472 -1.41016,2.14901 -1.41016,3.47461c0,3.01119 2.4651,5.47852 5.47656,5.47852c0.91711,0 1.81548,-0.2269 2.60352,-0.6582l7.57617,-3.98828l-0.0332,0.01563c1.89194,-0.90916 3.10352,-2.83724 3.10352,-4.93555c0,-1.3451 -0.58584,-2.51599 -1.41016,-3.48047c0.83077,-0.97473 1.41016,-2.14901 1.41016,-3.47461c0,-3.01119 -2.4651,-5.47852 -5.47656,-5.47852zM15.88672,3c1.92654,0 3.47656,1.55171 3.47656,3.47852c0,1.07146 -0.47433,2.04371 -1.2832,2.69922l-0.95898,0.77734l0.95898,0.77734c0.79153,0.64098 1.2832,1.61207 1.2832,2.70117c0,1.3217 -0.77864,2.55997 -1.9707,3.13281l-0.01562,0.00781l-7.61328,4.00977l-0.00586,0.00391c-0.47996,0.26271 -1.06164,0.41211 -1.64453,0.41211c-1.92654,0 -3.47656,-1.5517 -3.47656,-3.47852c0,-1.07146 0.47433,-2.04371 1.2832,-2.69922l0.95898,-0.77734l-0.95898,-0.77734c-0.79153,-0.64098 -1.2832,-1.61207 -1.2832,-2.70117c0,-1.29987 0.70603,-2.47062 1.85938,-3.07617h0.00195l7.73438,-4.07227l0.00586,-0.00391c0.49097,-0.2658 1.07167,-0.41406 1.64844,-0.41406zM10,9v6l5,-3z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <span class="label">Shorts</span>
+                </span>
+                
                 </span>
                 <span class="category">
                     <i class="material-icons">subscriptions</i>
@@ -76,27 +100,29 @@
                 </span>
             </div>
             <div class="category-section">
-                <p class="category_heading">SUBSCRIPTIONS</p>
-                <span class="category">
-                    <i class="material-icons">account_circle</i>
-                   Peekxy
-                </span>
-                <span class="category">
-                    <i class="material-icons">account_circle</i>
-                    Mr Beast
-                </span>
-                <span class="category">
-                    <i class="material-icons">account_circle</i>
-                    Coding With Mosh
-                </span>
-                <span class="category">
-                    <i class="material-icons">account_circle</i>
-                   Fireship
-                </span>
-                <span class="category">
-                    <i class="material-icons">account_circle</i>
-                    Zaio
-                </span>
+              <p class="category_heading">SUBSCRIPTIONS</p>
+              <span class="category">
+                  <img src="./Assets/Thumbnails/small pics/1.jpeg" alt="MrWhoseTheboss" class="profile-image"/>
+                  MrWhoseTheboss
+              </span>
+              <span class="category">
+                  <img src="/Assets/Thumbnails/small pics/2.jpeg" alt="Corridow Crew" class="profile-image"/>
+                  Corridow Crew
+              </span>
+              <span class="category">
+                  <img src="./Assets/Thumbnails/small pics/3.jpeg" alt="Dude Perfect" class="profile-image"/>
+                  Dude Perfect
+              </span>
+              <span class="category">
+                  <img src="./Assets/Thumbnails/small pics/6.jpeg" alt="MacG" class="profile-image"/>
+                  MacG
+              </span>
+              <span class="category">
+                  <img src="./Assets/Thumbnails/48.jpeg" alt="Marques Brownlee" class="profile-image"/>
+Marques Brownlee
+
+              </span>
+              
             </div>
             <div class="category-section">
                 <span class="category">
@@ -133,11 +159,27 @@
                     <span>How YouTube works</span>
                     <span>Test new features</span>
                 </div>
-                <span class="copyright">&copy; 2021 Zaio YouTube Clone</span>
+                <span class="copyright">&copy; 2025  YouTube Clone</span>
             </div>
         </div>
         <div class="videos">
           <div class="video-grid">
+            <div class="quicksearch">
+              <span class="category">All</span>
+              <span class="category">Books</span>
+              <span class="category">Food</span>
+              <span class="category">Science</span>
+              <span class="category">Fitness</span>
+              <span class="category">Fashion</span>
+              <span class="category">Art</span>
+              <span class="category">Nature</span>
+              <span class="category">History</span>
+              <span class="category">Travel</span>
+              <span class="category">Technology</span>
+              <span class="category">Health</span>
+             
+          </div>
+          
               <div class="video">
                   <div class="thumbnail">
                       <img src="/Assets/Thumbnails/15.jpeg" alt="">
@@ -159,7 +201,27 @@
                       </div>
                   </div>
               </div>
-              <!-- Additional videos -->
+              <div class="video">
+                  <div class="thumbnail">
+                      <img src="/Assets/Thumbnails/27.png" alt="">
+                  </div>
+                  <div class="details">
+                      <div class="profile">
+                          <img src="/Assets/Thumbnails/48.jpeg" alt="">
+                      </div>
+                      <div class="video-details">
+                          <p>iPhone 16e Review: Cheap?</p>
+                          <div class="posted-by">
+                              <span>Marques Brownlee <i class="material-icons">check_circle</i></span>
+                              <div class="views-date">
+                                  <span>84k Views</span>
+                                  <span>.</span>
+                                  <span>12 hours ago</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
               <div class="video">
                   <div class="thumbnail">
                       <img src="/Assets/Thumbnails/39.jpeg" alt="">
@@ -181,7 +243,6 @@
                       </div>
                   </div>
               </div>
-              <!-- Repeat similar blocks for the remaining videos -->
               <div class="video">
                   <div class="thumbnail">
                       <img src="/Assets/Thumbnails/21.jpeg" alt="">
@@ -203,9 +264,6 @@
                       </div>
                   </div>
               </div>
-              <!-- Continue with the rest of the videos -->
-
-              <!-- Video 4 -->
               <div class="video">
                   <div class="thumbnail">
                       <img src="/Assets/Thumbnails/19.jpeg" alt="">
@@ -227,19 +285,52 @@
                       </div>
                   </div>
               </div>
-              <!-- Video 5 -->
-             
-
-
-
-
-
-
-
-
-
-
-              <!-- Continue the list for remaining videos as needed -->
+              <div class="video">
+                  <div class="thumbnail">
+                      <img src="/Assets/Thumbnails/17.jpeg" alt="">
+                  </div>
+                  <div class="details">
+                      <div class="profile">
+                          <img src="/Assets/Thumbnails/23.jpeg" alt="">
+                      </div>
+                      <div class="video-details">
+                          <p>Music Vid by Gunner</p>
+                          <div class="posted-by">
+                              <span>Gunner</span>
+                              <div class="views-date">
+                                  <span>150k Views</span>
+                                  <span>.</span>
+                                  <span>1 day ago</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="video">
+                  <div class="thumbnail">
+                      <img src="/Assets/Thumbnails/37.jpeg" alt="">
+                  </div>
+                  <div class="details">
+                      <div class="profile">
+                          <img src="/Assets/Thumbnails/38.jpeg" alt="">
+                      </div>
+                      <div class="video-details">
+                          <p>Reaction by No Life Shaq: J Cole is Back</p>
+                          <div class="posted-by">
+                              <span>No Life Shaq</span>
+                              <div class="views-date">
+                                  <span>200k Views</span>
+                                  <span>.</span>
+                                  <span>2 days ago</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
       </div>
+      <script src="mode.js"></script>
+      </body>
+      </html>
+     
       
