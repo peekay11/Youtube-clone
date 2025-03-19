@@ -65,11 +65,11 @@ function applyThemeColorFromIndex() {
     }
 }
 
-// Redirect to "index.html" Automatically (First Load Only)
+// Redirect to "index2.html" Automatically (First Load Only)
 function loadIndex() {
     if (!sessionStorage.getItem('redirected')) {
         sessionStorage.setItem('redirected', 'true');
-        window.location.href = 'index.html';
+        window.location.href = 'index2.html'; // Redirect to the renamed file
     }
 }
 
